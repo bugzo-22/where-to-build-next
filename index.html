@@ -549,10 +549,19 @@ function App() {
   const [filter, setFilter] = useState("all");
   const [search, setSearch] = useState("");
 
+  const STAGE_ORDER = { "Early": 0, "Seed": 1, "Series A": 2, "Series B": 3, "Growth": 4, "Series C": 5, "Series D": 6, "Late": 7, "": 8 };
+  const CAT_ORDER = { "ai": 0, "energy": 1, "devtools": 2, "security": 3, "other": 4 };
+
   const filtered = COMPANIES.filter(c => {
     const matchCat = filter === "all" || c.category === filter;
     const matchSearch = !search || c.name.toLowerCase().includes(search.toLowerCase()) || c.oneliner.toLowerCase().includes(search.toLowerCase()) || c.founders.toLowerCase().includes(search.toLowerCase());
     return matchCat && matchSearch;
+  }).sort((a, b) => {
+    if (filter === "all") {
+      const catDiff = (CAT_ORDER[a.category] ?? 9) - (CAT_ORDER[b.category] ?? 9);
+      if (catDiff !== 0) return catDiff;
+    }
+    return (STAGE_ORDER[a.stage] ?? 9) - (STAGE_ORDER[b.stage] ?? 9);
   });
 
   if (selected) {
