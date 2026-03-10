@@ -268,14 +268,14 @@ const COMPANIES = [
   },
   {
     id: "semgrep", name: "Semgrep", color: "#10B981", emoji: "🛡️",
-    oneliner: "Code security that developers actually love — scanning 100M+ lines monthly",
-    fund: "Focus", stage: "Growth", valuation: "", raised: "Multi-round",
+    oneliner: "Code security that developers actually love — 2M+ users, trusted by Figma, Dropbox, Slack, and Snowflake",
+    fund: "Focus", stage: "Series D", valuation: "", raised: "$193M",
     location: "San Francisco",
     careers: "https://jobs.ashbyhq.com/semgrep/",
-    founders: "Isaac Evans (CEO): Built the company from academic research into a commercial powerhouse. Security research and developer tooling background. Realized shifting security 'left' required tools developers actually enjoy.",
-    product: "Code security platform: 500+ built-in rules across 30+ languages. AI-powered Semgrep Assistant understands code context, reduces false positives, auto-triages. Rules look like the code they match — any developer can write security checks. Open-source core + enterprise.",
-    thesis: "AI-generated code is flooding codebases — but AI makes mistakes. As every company ships more code faster with AI, the attack surface grows exponentially. Semgrep is the safety net. Scaled from thousands to 100M+ lines scanned monthly.",
-    numbers: "100M+ lines scanned monthly. Major enterprise customers in tech, finance, healthcare. San Francisco-based.",
+    founders: "Isaac Evans (CEO), Drew Dennison (CTO), and Luke O'Malley (CPO) — three MIT graduates who founded the company in 2017. Evans and Dennison were college roommates at MIT who went on to become Entrepreneurs in Residence at Redpoint Ventures. They saw a clear gap: companies like Palantir and Facebook had world-class application security teams, but most startups had nothing — and no tools simple enough to close the gap. O'Malley joined as Head of Product to round out the founding team. The breakthrough came when they discovered sgrep, a semantic code analysis tool originally built inside Facebook, and recognized its potential as the foundation for something much bigger. They forked it, modernized it for 30+ languages, and Semgrep was born — turning a research tool into the industry's most developer-loved security platform.",
+    product: "Application security platform: static analysis (SAST), software composition analysis (SCA), and secrets detection across 30+ languages. AI-powered Semgrep Assistant understands code context, reduces false positives, and auto-triages. Rules look like the code they match — any developer can write security checks, no specialized expertise needed. Open-source core + enterprise platform.",
+    thesis: "AI-generated code is flooding codebases — but AI makes mistakes. As every company ships more code faster, the attack surface grows exponentially. Semgrep is the safety net. Founded on the insight that security should accelerate development, not obstruct it. Recognized in the 2025 Gartner Magic Quadrant for Application Security Testing. Fortune Cyber 60 list three consecutive years.",
+    numbers: "$193M raised across 4 rounds. Series D led by Menlo Ventures. Prior investors: Lightspeed, Sequoia, Redpoint. 2M+ users, 100M+ scans annually. Customers: Figma, Dropbox, Slack, Snowflake, Lyft. ~240 employees. Inc. 2025 Best in Business for AI Implementation.",
     category: "security"
   },
   {
@@ -337,6 +337,18 @@ const COMPANIES = [
     thesis: "a16z partner Marc Andrusko: 'Just as Deel redefined global payroll, Sphere is transforming revenue-based compliance.' Expanding beyond indirect tax into input tax, withholding, e-invoicing, and tariffs.",
     numbers: "$21M Series A led by Andreessen Horowitz, with YC. Customers: Lovable, Replit, Windsurf, Deel, ElevenLabs, HeyGen. 30%+ monthly revenue growth since Dec 2024 launch.",
     category: "other"
+  },
+  {
+    id: "letta", name: "Letta", color: "#A78BFA", emoji: "🧠",
+    oneliner: "AI agents with memory — the Berkeley spinout that created MemGPT and pioneered stateful AI",
+    fund: "FV 9", stage: "Seed", valuation: "$70M", raised: "$10M",
+    location: "Oakland",
+    careers: "https://jobs.ashbyhq.com/letta",
+    founders: "Charles Packer (CEO) and Sarah Wooders (CTO) — both UC Berkeley PhDs from the legendary Sky Computing Lab, advised by Ion Stoica (Databricks co-founder) and Joseph Gonzalez. They created MemGPT, the viral open-source project that introduced self-editing memory for LLMs — the foundational concept that made stateful AI agents possible. Before MemGPT, all AI agents were stateless and forgot everything between sessions.",
+    product: "Framework and cloud platform for building AI agents with persistent memory. Agents live and operate autonomously on Letta's server — maintaining state even when your app isn't running. White-box memory means developers see exactly what prompts and memories are passed to the LLM at each step. Agent Development Environment (ADE) for debugging. Model-agnostic — works with any LLM. Pioneering 'sleep-time compute' where agents think while idle.",
+    thesis: "Memory is the most important unsolved problem in AI. Personalization, self-improvement, tool use, reasoning — all fundamentally memory management problems. Letta positions itself as 'the open alternative to OpenAI' for agent infrastructure. Sky Lab has produced Databricks, Anyscale, vLLM, SGLang — Letta is the next in that lineage.",
+    numbers: "$10M seed at $70M valuation. Angels: Jeff Dean (Google Chief Scientist), Clem Delangue (HuggingFace CEO), Cristóbal Valenzuela (Runway CEO), Jordan Tigani (MotherDuck CEO), Tristan Handy (dbt Labs CEO), Robert Nishihara (Anyscale co-founder). ~19 employees. Oakland-based.",
+    category: "devtools"
   },
   {
     id: "unsiloed", name: "Unsiloed AI", color: "#F43F5E", emoji: "📄",
